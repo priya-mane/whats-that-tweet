@@ -1,0 +1,10 @@
+gunicorn==20.0.4
+Flask==1.1.2
+requests==2.22.0
+Flask-Dance==3.0.0
+numpy==1.18.4
+vaderSentiment==3.3.2
+nltk==3.5
+regex==2020.10.15
+tqdm==4.29.1
+sklearn==0.0
