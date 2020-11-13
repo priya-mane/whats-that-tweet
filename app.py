@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = "priyamane"
 
 twitter_blueprint = make_twitter_blueprint(
-    api_key=os.environ.get('API_KEY', None), api_secret=os.environ.get('API_SECRET', None))
+    api_key=os.environ.get('API_KEY'), api_secret=os.environ.get('API_SECRET'))
 
 app.register_blueprint(twitter_blueprint, url_prefix='/login')
 
