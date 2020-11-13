@@ -72,6 +72,14 @@ http://127.0.0.1:5000/
 
 4. Vader Sentiment analysis for each tweet.
 
+## Demo
+
+You can take the demo of the application at [the heroku deployed version of the app ](https://whats-that-tweet.herokuapp.com/).
+
+Please note that the app will work if you have significant amount of tweets (at least 10-15).
+
+If you do not have these many tweets please add a few more test tweets to see the results.
+
 ## Author name
 
 Priya Mane

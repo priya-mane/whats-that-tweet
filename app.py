@@ -4,13 +4,13 @@ import requests
 import btm_model
 import text_cleaning
 import sentiment
-import logging
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "priyamane"
 
 twitter_blueprint = make_twitter_blueprint(
-    api_key="AzqEjaNv5YHvexmpPs2DGle0a", api_secret="C3Qx8hvZTuhwiRpKVgjH0gPaaFKz5QCcAaHZ2yyflOJzvRwWtc")
+    api_key=os.environ.get('API_KEY', None), api_secret=os.environ.get('API_SECRET', None))
 
 app.register_blueprint(twitter_blueprint, url_prefix='/login')
 
